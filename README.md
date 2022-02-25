@@ -59,6 +59,17 @@ value to 'true' instructs the client to use OAuth authentication protocols.
 
 * csv_file_path: The local file path to the CSV file to use.
 
+
+#### CSV File structure
+The CSV file should have 2 columns.  The first cloumn should have a header of "Project ID". the second column should have a header of "Item Type ID". The values in the cells should be the API ID's of the project and/or item type.
+
+ex: 
+| Project ID     | Item Type ID |
+| ---            | ---          |
+| 42             | 19           |
+| 43             | 19           |
+| 43             | 20           |
+
 ## Running the script
 
 1) Open a terminal to the project directory.
