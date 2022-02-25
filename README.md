@@ -8,31 +8,12 @@ Jama Software is focused on maximizing innovation success. Numerous firsts for h
 This section contains information on how to install the required dependencies for this script.
 
 ### Pre-Requisites
-* [Python 3.7+](https://www.python.org/downloads/release/python-377/) If using pipenv you must use a python 3.7.X 
-version.  If installing requirements manually you may use any python version including 3.8+ however testing has only
-been done against python 3.7
-
+* [Python 3.7+](https://www.python.org/downloads/release/python-377/)
 
 * Enable the REST API on your Jama Connect instance
 
-### Pipenv installation (Recommended)
-If you do not already have Pipenv installed on your machine you can learn how to install it here: 
-[https://pypi.org/project/pipenv/](https://pypi.org/project/pipenv/)
-
-
-The required dependencies for this project are managed with Pipenv and can be installed by opening a terminal application
-to the project directory and entering the following command:
-```bash
-    pipenv install
-```
-
-### Manual installation
-If you do not wish to use Pipenv, you may manually install the required dependencies with pip.
-```bash
-pip install --user py-jama-rest-client
-```
-
-Or you can use the requiremnts.txt file as follows
+### Installation
+ Install the required dependencies with pip.
 ```bash
 pip install -r requirements.txt
 ```
@@ -73,11 +54,7 @@ ex:
 ## Running the script
 
 1) Open a terminal to the project directory.
-2) If using pipenv enter the following (otherwise skip to step 3):
-   ```bash
-   pipenv shell 
-   ``` 
-3) Enter the following command into your terminal (Note that the script accepts one parameter and that is the path to
+2) Enter the following command into your terminal (Note that the script accepts one parameter and that is the path to
 the config file created above):  
    ```bash 
    python project_item_type_configurator.py config.ini
@@ -86,3 +63,5 @@ the config file created above):
 ## Output
 Execution logs will be output to the terminal as well as output to a log file in the /logs folder located next to the 
 script.
+
+
